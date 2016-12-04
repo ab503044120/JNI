@@ -15,7 +15,7 @@ NativeUtil.java
  设置图片的采样率，降低图片像素
  > public static void compressBitmap(String filePath, File file)
  
-###4. 利用libjpg哈夫曼编码压缩图片
+###4. 利用libjpeg哈夫曼编码压缩图片
  >  public static native String compressBitmap(Bitmap bit, int w, int h, int quality, byte[] fileNameBytes,
   	                                                boolean optimize);
 
