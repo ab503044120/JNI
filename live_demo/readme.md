@@ -15,4 +15,4 @@
 
 直接点击 nginx.exe运行即可用
 
-### [查看centos的搭建rtmp的方法](https://github.com/ab503044120/JNI/tree/master/live_demo/centos_nginx_rtmp)
+### [查看centos的搭建rtmp的方法](https://github.com/ab503044120/JNI/tree/master/live_demo/centos_nginx_rtmp.md)
