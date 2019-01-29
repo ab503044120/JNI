@@ -10,58 +10,60 @@
 #include "test/Pet.h"
 
 class base {
-public:
+ public:
 
-    base(string &a) {
+  base(string &a) {
 
-    }
+  }
 
-    void a() {
-        __android_log_print(ANDROID_LOG_ERROR, "dog", "base a\n");
-        b(1);
-    };
+  void a() {
+    __android_log_print(ANDROID_LOG_ERROR, "dog", "base a\n");
+    b(1);
+  };
 
-    virtual void b(int x) {
-        __android_log_print(ANDROID_LOG_ERROR, "dog", "base b %d \n", x);
-    };
+  virtual void b(int x) {
+    __android_log_print(ANDROID_LOG_ERROR, "dog", "base b %d \n", x);
+  };
 };
 
-const char *bb = "aa";
 
-class ext : public base {
-public:
-    ext() : base(string(bb)) {}
+class ext: public base {
+ public:
+  int bbb;
+  ext(string &a) : base(static_cast<std::string &>("aaa")), bbb(2) {}
 
-private:
-    virtual void b(int x) {
-        __android_log_print(ANDROID_LOG_ERROR, "dog", "ext b %d \n", x);
-    };
+ private:
+  virtual void b(int x) {
+    __android_log_print(ANDROID_LOG_ERROR, "dog", "ext b %d \n", x);
+  };
 
 };
 
 
 extern "C" JNIEXPORT jstring JNICALL
 Java_org_huihui_cpptest_MainActivity_stringFromJNI(
-        JNIEnv *env,
-        jobject /* this */) {
-    std::string hello = "Hello from C++";
+    JNIEnv *env,
+    jobject /* this */) {
+  std::string hello = "Hello from C++";
 
-    Hasky hasky("汪汪");
-    hasky.Pet::call();
-    hasky.haha();
+  Hasky hasky("汪汪");
+  hasky.Pet::call();
+  hasky.haha();
 
-    Animal &a = hasky;
-    a.haha();
-    string aa = "a";
-    string *bbb = &aa;
-    ext ext_i;
-    base base_i(aa);
-    base *base_p;
-    base &base_r = ext_i;
-    base_p = &ext_i;
-    base_p->a();
-    base_r.a();
-    base_i.a();
+  Animal &a = hasky;
+  a.haha();
+  string aa = "a";
+
+  string &bb = (string &) "a";
+
+  ext ext_i(bb);
+  base base_i(bb);
+  base *base_p;
+  base &base_r = ext_i;
+  base_p = &ext_i;
+  base_p->a();
+  base_r.a();
+  base_i.a();
 
 //    std::vector<string> vector1{"1", "2", "3"};
 //    vector1.insert(vector1.begin() += 1, "a");
@@ -69,7 +71,7 @@ Java_org_huihui_cpptest_MainActivity_stringFromJNI(
 //    std::deque deque1;
 //    std::list list1;
 //    list1.insert(++list1.begin(), "b");
-    return env->NewStringUTF(hello.c_str());
+  return env->NewStringUTF(hello.c_str());
 }
 
 
