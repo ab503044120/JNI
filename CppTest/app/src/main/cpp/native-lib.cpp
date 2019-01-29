@@ -9,25 +9,30 @@
 #include "test/Hasky.h"
 #include "test/Pet.h"
 
-class base
-{
+class base {
 public:
-    void a()
-    {
-        __android_log_print(ANDROID_LOG_ERROR,"dog","base a\n");
+
+    base(string &a) {
+
+    }
+
+    void a() {
+        __android_log_print(ANDROID_LOG_ERROR, "dog", "base a\n");
         b(1);
     };
-    virtual void b(int x)
-    {
-        __android_log_print(ANDROID_LOG_ERROR,"dog","base b %d \n",x);
+
+    virtual void b(int x) {
+        __android_log_print(ANDROID_LOG_ERROR, "dog", "base b %d \n", x);
     };
 };
+const char* bb = "aa";
+class ext : public base {
+public:
+    ext() : base(string(bb)) {}
 
-class ext:public base
-{
-    virtual void b(int x)
-    {
-        __android_log_print(ANDROID_LOG_ERROR,"dog","ext b %d \n",x);
+private:
+    virtual void b(int x) {
+        __android_log_print(ANDROID_LOG_ERROR, "dog", "ext b %d \n", x);
     };
 
 };
@@ -45,12 +50,12 @@ Java_org_huihui_cpptest_MainActivity_stringFromJNI(
 
     Animal &a = hasky;
     a.haha();
-
+    string aa = "a";
     ext ext_i;
-    base base_i;
-    base*  base_p;
-    base&  base_r=ext_i;
-    base_p=&ext_i;
+    base base_i(aa);
+    base *base_p;
+    base &base_r = ext_i;
+    base_p = &ext_i;
     base_p->a();
     base_r.a();
     base_i.a();
