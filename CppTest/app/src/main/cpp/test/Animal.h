@@ -16,7 +16,11 @@ public:
 
     Animal(string n);
 
-    virtual void call() = 0;
+    virtual void call(){};
+
+    void haha() {
+        call();
+    }
 };
 
 
