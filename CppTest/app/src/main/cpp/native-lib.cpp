@@ -42,7 +42,7 @@ private:
 
 int &return0() {
 
-    int a = 0;
+    static int a = 0;
     return a;
 }
 
