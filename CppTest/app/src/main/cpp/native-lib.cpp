@@ -162,7 +162,7 @@ Java_org_huihui_cpptest_MainActivity_stringFromJNI(
 //    list1.insert(++list1.begin(), "b");
 
     test02();
-
+    jbyteArray bytes = env->NewByteArray(10);
     return env->NewStringUTF(hello.c_str());
 }
 
