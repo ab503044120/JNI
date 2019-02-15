@@ -58,7 +58,7 @@ Java_org_huihui_jnitest_Test_start(JNIEnv *env, jclass clazz) {
 
 void *tickThread(void *arg) {
     JNIEnv *env;
-    g_ctx.javaVm->GetEnv(g_ctx.javaVm,(void**)&env, JNI_VERSION_1_6);
+    g_ctx.javaVm->GetEnv(g_ctx.javaVm,env, JNI_VERSION_1_6);
     ->CallVoidMethod(g_ctx.callbackObj, g_ctx.callbackClass_onTick);
 }
 
