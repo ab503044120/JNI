@@ -10,5 +10,6 @@ public class Test {
     public static native void unInit();
 
     public static native void  start();
+    public static native void  stop();
 
 }

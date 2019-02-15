@@ -2,6 +2,7 @@ package org.huihui.jnitest;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 public class MainActivity extends AppCompatActivity implements Callback {
 
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Test.init(this);
+        Test.start();
     }
 
     @Override
@@ -21,6 +23,6 @@ public class MainActivity extends AppCompatActivity implements Callback {
 
     @Override
     public void onTick() {
-
+        Log.e("happy", "onTick: ");
     }
 }
