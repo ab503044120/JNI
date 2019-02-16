@@ -116,6 +116,8 @@ void test02() {
 }
 
 
+
+
 extern "C" JNIEXPORT jstring JNICALL
 Java_org_huihui_cpptest_MainActivity_stringFromJNI(
     JNIEnv *env,
@@ -132,6 +134,7 @@ Java_org_huihui_cpptest_MainActivity_stringFromJNI(
   int &a0 = return0();
 
 //    string aa = "a";
+    string &bb = new string("aaa");
 
 
 //  string &bb = new string("aaa");
@@ -162,7 +165,9 @@ Java_org_huihui_cpptest_MainActivity_stringFromJNI(
 
   test02();
 
-  return env->NewStringUTF(hello.c_str());
+    test02();
+    jbyteArray bytes = env->NewByteArray(10);
+    return env->NewStringUTF(hello.c_str());
 }
 
 
