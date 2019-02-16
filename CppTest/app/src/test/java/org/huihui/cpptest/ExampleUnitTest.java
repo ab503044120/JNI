@@ -14,4 +14,26 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
     }
+
+    class Parent {
+        public Parent() {
+            print();
+        }
+
+        public void print() {
+            System.out.println("父类");
+        }
+    }
+
+    class Child extends Parent {
+        @Override
+        public void print() {
+            System.out.println("子类");
+        }
+    }
+
+    @Test
+    public void testExtends() {
+        new Child();
+    }
 }
