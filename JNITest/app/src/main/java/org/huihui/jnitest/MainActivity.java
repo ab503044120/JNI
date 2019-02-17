@@ -15,6 +15,13 @@ public class MainActivity extends AppCompatActivity implements Callback {
         Test.start();
     }
 
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Test.stop();
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
