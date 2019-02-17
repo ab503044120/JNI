@@ -81,16 +81,21 @@ void *socketSelectThread(void *arg) {
   LOGV("happy", "socket开启");
   int fd_max = socket_t;
   struct timeval timeval1;
-  timeval1.tv_sec = 5;
+
   while (true) {
+    //这里好实时设置
+    timeval1.tv_sec = 5;
+    timeval1.tv_usec = 5000;
+    //这里好拷贝不然出错
     copy_socket_fd_set = socket_fd_set;
     pthread_mutex_lock(csocket->mutex);
     if (!csocket->thread_run) {
+      LOGV("happy", "被标记为退出");
       break;
     }
     pthread_mutex_unlock(csocket->mutex);
     LOGV("happy", "start select fd_max:%d", fd_max);
-    int ret = select(fd_max + 1, &copy_socket_fd_set, 0, 0, 0);
+    int ret = select(fd_max + 1, &copy_socket_fd_set, 0, 0, &timeval1);
     LOGV("happy", "select");
     if (ret < 0) {
       LOGV("happy", "错误");
@@ -165,6 +170,10 @@ Java_com_westwhale_csocket_CSocket_start(JNIEnv *env, jobject instance, jlong ha
 extern "C"
 JNIEXPORT void JNICALL
 Java_com_westwhale_csocket_CSocket_stop(JNIEnv *env, jobject instance, jlong handle_t) {
-
+  csocket_t *csocket = reinterpret_cast<csocket_t *>(handle_t);
+  close(csocket->socket_handle_t);
+  pthread_mutex_lock(csocket->mutex);
+  csocket->thread_run = false;
+  pthread_mutex_unlock(csocket->mutex);
 }
 
