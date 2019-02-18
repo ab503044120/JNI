@@ -13,4 +13,6 @@ public class Test {
 
     public static native void  stop();
 
+    public static native String handleString(String s);
+
 }

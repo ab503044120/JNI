@@ -3,6 +3,7 @@ package org.huihui.jnitest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements Callback {
 
@@ -12,6 +13,9 @@ public class MainActivity extends AppCompatActivity implements Callback {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Test.init(this);
+        ((TextView) findViewById(R.id.sample_text))
+//                .setText(Test.handleString("你好"));
+                .setText(Test.handleString("hello"));
         Test.start();
     }
 
