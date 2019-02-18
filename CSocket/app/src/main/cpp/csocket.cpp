@@ -8,6 +8,8 @@
 #include "log/log.h"
 #include <arpa/inet.h>
 #include <unistd.h>
+#include <pthread.h>
+
 typedef struct {
   int port;
   pthread_t *thread_t;
