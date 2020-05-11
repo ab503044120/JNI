@@ -1,0 +1,9 @@
+# ninja log v5
+1	1350	606308706	CMakeFiles/native-lib.dir/native-lib.cpp.o	4cb8bddcb1626fef
+1354	2852	606308707	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	2ecbe8d968eaa1da
+7	859	606372399	CMakeFiles/native-lib.dir/native-lib.cpp.o	4cb8bddcb1626fef
+4	1241	606372417	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	2ecbe8d968eaa1da
+2	249	606372484	CMakeFiles/testc.dir/TestC.c.o	1d6d8d6f3c700cb2
+250	391	606372484	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libtestc.so	1fa23342341186a4
+4	1153	606373320	CMakeFiles/native-lib.dir/native-lib.cpp.o	4cb8bddcb1626fef
+1153	1360	606373320	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libnative-lib.so	2ecbe8d968eaa1da

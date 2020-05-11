@@ -1,0 +1,62 @@
+{
+  "stringTable": {
+    "0": "E:/code/JNI/JNITest/app/.cxx/cmake/debug/x86",
+    "1": "--target=i686-none-linux-android16 --gcc-toolchain=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dnative_lib_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++ -O0 -fno-limit-debug-info -fPIC",
+    "2": "--target=i686-none-linux-android16 --gcc-toolchain=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dtestc_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\build\\cmake\\platforms.cmake",
+    "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\debug\\x86\" clean"
+  ],
+  "buildTargetsCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\debug\\x86\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "testc-Debug-x86": {
+      "buildCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\debug\\x86\" testc",
+      "buildType": "debug",
+      "toolchain": "4218583648",
+      "abi": "x86",
+      "artifactName": "testc",
+      "files": [
+        {
+          "src": "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\TestC.c",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\code\\JNI\\JNITest\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libtestc.so"
+    },
+    "native-lib-Debug-x86": {
+      "buildCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\debug\\x86\" native-lib",
+      "buildType": "debug",
+      "toolchain": "4218583648",
+      "abi": "x86",
+      "artifactName": "native-lib",
+      "files": [
+        {
+          "src": "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "E:\\code\\JNI\\JNITest\\app\\build\\intermediates\\cmake\\debug\\obj\\x86\\libnative-lib.so"
+    }
+  },
+  "toolchains": {
+    "4218583648": {
+      "cCompilerExecutable": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [
+    "c"
+  ],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

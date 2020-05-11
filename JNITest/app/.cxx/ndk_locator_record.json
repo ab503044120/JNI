@@ -1,0 +1,41 @@
+{
+  "ndkFolder": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600",
+  "messages": [
+    {
+      "level": "INFO",
+      "message": "android.ndkVersion from module build.gradle is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "ndk.dir in local.properties is E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600"
+    },
+    {
+      "level": "INFO",
+      "message": "ANDROID_NDK_HOME environment variable is not set"
+    },
+    {
+      "level": "INFO",
+      "message": "sdkFolder is E:\\DevelopTool\\EclipseWithAdt\\sdk"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600 by ndk.dir"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk-bundle in SDK ndk-bundle folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Considering E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600 in SDK ndk folder"
+    },
+    {
+      "level": "INFO",
+      "message": "Rejected E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk-bundle in SDK ndk-bundle folder because that location has no source.properties"
+    },
+    {
+      "level": "INFO",
+      "message": "Found requested ndk.dir (E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600) which has version 19.2.5345600"
+    }
+  ]
+}

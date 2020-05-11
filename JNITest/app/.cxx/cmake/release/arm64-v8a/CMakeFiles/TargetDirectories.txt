@@ -1,0 +1,4 @@
+E:/code/JNI/JNITest/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/native-lib.dir
+E:/code/JNI/JNITest/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/testc.dir
+E:/code/JNI/JNITest/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+E:/code/JNI/JNITest/app/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

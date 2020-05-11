@@ -4,7 +4,6 @@
 #include <pthread.h>
 #include <cstring>
 #include <unistd.h>
-
 void *tickThread(void *arg);
 
 const char *TAG = "happy";
@@ -94,7 +93,6 @@ Java_org_huihui_jnitest_Test_handleString(JNIEnv *env, jclass type, jstring j_st
 //    LOGV(TAG,"%d",strLen);
 //    env->GetStringRegion(j_str, 0, strLen, c_string);
 //    return env->NewString(c_string, strLen - 1);
-
 
     //utf-8
     int strLen = env->GetStringUTFLength(j_str);

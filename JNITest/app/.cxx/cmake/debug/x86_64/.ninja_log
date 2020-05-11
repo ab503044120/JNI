@@ -1,0 +1,7 @@
+# ninja log v5
+0	1456	606308717	CMakeFiles/native-lib.dir/native-lib.cpp.o	519b674cbe8178e0
+1459	2969	606308718	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	53864754aa4f79d
+18	201	606372486	CMakeFiles/testc.dir/TestC.c.o	c82bcb6ae431fde5
+201	421	606372486	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/x86_64/libtestc.so	69ac1697c5439de1
+4	628	606372487	CMakeFiles/native-lib.dir/native-lib.cpp.o	519b674cbe8178e0
+628	794	606372487	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/x86_64/libnative-lib.so	53864754aa4f79d

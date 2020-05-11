@@ -1,0 +1,12 @@
+# ninja log v5
+1	1421	606308710	CMakeFiles/native-lib.dir/native-lib.cpp.o	c6becc870671ae2c
+1424	2919	606308711	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	1cedab32df3a4b69
+15	406	606312728	CMakeFiles/native-lib.dir/TestC.c.o	616916f9d4870d7d
+4	146	606312881	CMakeFiles/native-lib.dir/TestC.c.o	616916f9d4870d7d
+16	605	606312881	CMakeFiles/native-lib.dir/native-lib.cpp.o	c6becc870671ae2c
+12	187	606372484	CMakeFiles/testc.dir/TestC.c.o	450a4b146e79d082
+188	368	606372485	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/arm64-v8a/libtestc.so	62287b3b435434b6
+2	669	606372485	CMakeFiles/native-lib.dir/native-lib.cpp.o	c6becc870671ae2c
+669	806	606372485	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	1cedab32df3a4b69
+8	843	606373319	CMakeFiles/native-lib.dir/native-lib.cpp.o	c6becc870671ae2c
+843	1012	606373319	E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	1cedab32df3a4b69

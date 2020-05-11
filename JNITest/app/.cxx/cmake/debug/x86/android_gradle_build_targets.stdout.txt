@@ -1,0 +1,5 @@
+ninja: Entering directory `E:\code\JNI\JNITest\app\.cxx\cmake\debug\x86'
+[1/4] Building C object CMakeFiles/testc.dir/TestC.c.o
+[2/4] Linking C shared library E:\code\JNI\JNITest\app\build\intermediates\cmake\debug\obj\x86\libtestc.so
+[3/4] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[4/4] Linking CXX shared library E:\code\JNI\JNITest\app\build\intermediates\cmake\debug\obj\x86\libnative-lib.so

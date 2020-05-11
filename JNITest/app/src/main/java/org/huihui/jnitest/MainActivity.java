@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity implements Callback {
 //                .setText(Test.handleString("你好"));
                 .setText(Test.handleString("hello"));
         Test.start();
+        new TestC().envTest();
     }
 
 

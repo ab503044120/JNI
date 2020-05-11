@@ -1,0 +1,10 @@
+ninja: Entering directory `E:\code\JNI\JNITest\app\.cxx\cmake\debug\arm64-v8a'
+[1/3] Building C object CMakeFiles/native-lib.dir/TestC.c.o
+[2/3] Building CXX object CMakeFiles/native-lib.dir/native-lib.cpp.o
+[3/3] Linking CXX shared library E:\code\JNI\JNITest\app\build\intermediates\cmake\debug\obj\arm64-v8a\libnative-lib.so
+FAILED: E:/code/JNI/JNITest/app/build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so 
+cmd.exe /C "cd . && E:\DevelopTool\EclipseWithAdt\sdk\ndk\19.2.5345600\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 --gcc-toolchain=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O0 -fno-limit-debug-info  -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,-z,noexecstack -Wl,-z,relro -Wl,-z,now -shared -Wl,-soname,libnative-lib.so -o E:\code\JNI\JNITest\app\build\intermediates\cmake\debug\obj\arm64-v8a\libnative-lib.so CMakeFiles/native-lib.dir/TestC.c.o CMakeFiles/native-lib.dir/native-lib.cpp.o  -llog -latomic -lm && cd ."
+CMakeFiles/native-lib.dir/native-lib.cpp.o: In function `Java_org_huihui_jnitest_Test_handleString':
+E:/code/JNI/JNITest/app/src/main/cpp/native-lib.cpp:98: undefined reference to `test(_JNIEnv*)'
+clang++.exe: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.

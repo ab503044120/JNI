@@ -1,0 +1,13 @@
+[
+{
+  "directory": "E:/code/JNI/JNITest/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dnative_lib_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -Oz -DNDEBUG  -fPIC   -o CMakeFiles\\native-lib.dir\\native-lib.cpp.o -c E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\native-lib.cpp",
+  "file": "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\native-lib.cpp"
+},
+
+{
+  "directory": "E:/code/JNI/JNITest/app/.cxx/cmake/release/armeabi-v7a",
+  "command": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe --target=armv7-none-linux-androideabi16 --gcc-toolchain=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=E:/DevelopTool/EclipseWithAdt/sdk/ndk/19.2.5345600/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dtestc_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mfpu=vfpv3-d16 -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC   -o CMakeFiles\\testc.dir\\TestC.c.o   -c E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\TestC.c",
+  "file": "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\TestC.c"
+}
+]

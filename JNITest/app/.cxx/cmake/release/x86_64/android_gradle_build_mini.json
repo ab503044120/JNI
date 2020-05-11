@@ -1,0 +1,25 @@
+{
+  "buildFiles": [
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\build\\cmake\\platforms.cmake",
+    "E:\\code\\JNI\\JNITest\\app\\src\\main\\cpp\\CMakeLists.txt",
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\ndk\\19.2.5345600\\build\\cmake\\android.toolchain.cmake"
+  ],
+  "cleanCommands": [
+    "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\release\\x86_64\" clean"
+  ],
+  "buildTargetsCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\release\\x86_64\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "native-lib-Release-x86_64": {
+      "artifactName": "native-lib",
+      "buildCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\release\\x86_64\" native-lib",
+      "abi": "x86_64",
+      "output": "E:\\code\\JNI\\JNITest\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libnative-lib.so"
+    },
+    "testc-Release-x86_64": {
+      "artifactName": "testc",
+      "buildCommand": "E:\\DevelopTool\\EclipseWithAdt\\sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"E:\\code\\JNI\\JNITest\\app\\.cxx\\cmake\\release\\x86_64\" testc",
+      "abi": "x86_64",
+      "output": "E:\\code\\JNI\\JNITest\\app\\build\\intermediates\\cmake\\release\\obj\\x86_64\\libtestc.so"
+    }
+  }
+}
